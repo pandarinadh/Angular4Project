@@ -4,7 +4,7 @@
     Welcome to {{ title }}!
   </h1>
   <div> Months:
-    <select>
+    <select (change) = "changemonths($event)">
         <option *ngFor = "let i of months">{{i}}</option>
     </select>
   </div>
